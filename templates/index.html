@@ -1,5 +1,4 @@
 <!doctype html>
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,8 +10,12 @@
 <body>
     {% include "head/header.html" %}
     <h1>Primer Projecte - app Prova</h1>
-    <p>Benevenuti a le primere pagine PRove</p>
+    <h2>PRÀCTICA 16 - TEMPLATES I VIEWS</h2>
+    <p>Bienvingut a la pagina inicial</p>
 
+    {% block content %}
+    {% endblock %}
+<!--
     <p>Dades Professor</p>
     <div>
         <div>
@@ -25,5 +28,6 @@
             <label>Edat: </label> {{ age }}
         </div>
     </div>
+    -->
 </body>
 </html>

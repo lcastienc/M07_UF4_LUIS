@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<h1>Es mostra la informació dels estudiants de M06 de DAW2</h1>
+
+<ul>
+    {% for st in stds %}
+    <li>Nom: {{ st.name }}</li>
+    <li>Cognom: {{ st.surname }}</li>
+    <li>Edat: {{ st.age }}</li>
+    <br>
+    {%endfor%}
+</ul>
+
+{% endblock %}
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+-->
