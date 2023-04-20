@@ -1,0 +1,14 @@
+
+{% extends 'index.html' %}
+{% block content %}
+
+<h1>Es mostra la informació del estudiant {{st.id}} de M06 de DAW2</h1>
+
+<ul>
+    <li>Nom: {{ st.name }}</li>
+    <li>Cognom: {{ st.surname }}</li>
+    <li>Edat: {{ st.age }}</li>
+    <br>
+</ul>
+<a href="/M07UF4/students" >Lista de alumnos</a>
+{% endblock %}

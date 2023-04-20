@@ -1,16 +1,13 @@
 {% extends 'index.html' %}
 {% block content %}
 
-<h1>Es mostra la informació dels professors de M06 de DAW2</h1>
+<h1>Es mostra la informació del professor de M06 de DAW2 amb id {{a.id}}</h1>
 
 <ul>
-    {% for a in ts %}
     <li>Nom: {{ a.name }}</li>
     <li>Cognom: {{ a.surname }}</li>
     <li>Edat: {{ a.age }}</li>
     <br>
-    {%endfor%}
 </ul>
-
+<a href="/M07UF4/teachers" >Lista de profes</a>
 {% endblock%}
-
